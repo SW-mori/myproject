@@ -41,7 +41,7 @@ let rules = [
   },
 
   {
-    test: /\.(png|jpg|gif)$/i,
+    test: /\.(png|jpg|gif|ico)$/i,
     generator: {
       filename: 'img/[name][ext][query]'
     },
@@ -100,10 +100,7 @@ const buildDefault = {
   ]
 };
 
-const pugFiles = globule.find('src/pug/page/*', {
-  ignore: ['src/pug/component/*', 'src/pug/layout/*']
-});
-
+const pugFiles = globule.find('src/html/*.pug');
 pugFiles.forEach((pug) => {
   const html = pug.split('/').slice(-1)[0].replace('.pug', '.html');
 
@@ -112,7 +109,7 @@ pugFiles.forEach((pug) => {
     new HtmlWebpackPlugin ({
 
       // distのファイル名
-      filename: `${path.resolve(__dirname, 'dist')}/html/${html}`,
+      filename: `${path.resolve(__dirname, 'dist', 'html')}/${html}`,
 
       // 自動的にバンドル対象のjsとcssを入れる。
       inject: 'body',

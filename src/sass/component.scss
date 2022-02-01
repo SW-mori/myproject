@@ -1,11 +1,7 @@
-.box{
-    background-color: $base_color;
-    width: 20px;
-    height: 20px;
+#heading {
+    font-size: 30px;
 }
 
-.image-box{
-    width: 100px;
-    height: 100px;
-    background-image: url('../img/sample.jpg');
+.paragraph {
+    color: $base_color;
 }
