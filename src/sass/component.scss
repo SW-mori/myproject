@@ -1,0 +1,11 @@
+.box{
+    background-color: $base_color;
+    width: 20px;
+    height: 20px;
+}
+
+.image-box{
+    width: 100px;
+    height: 100px;
+    background-image: url('../img/sample.jpg');
+}
