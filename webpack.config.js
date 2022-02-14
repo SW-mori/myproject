@@ -1,8 +1,10 @@
 //CSSを外部ファイルとして出力するために必要なプラグイン
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const WebpackWatchedGlobEntries = require('webpack-watched-glob-entries-plugin');
 const path = require('path');
 const globule = require('globule');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 
 let rules = [
@@ -94,10 +96,13 @@ const buildDefault = {
   },
 
   plugins: [
+    new CleanWebpackPlugin(),
+		new WebpackWatchedGlobEntries(),
+
     new MiniCssExtractPlugin({
       filename: 'css/[name].css'
-    })
-  ]
+    }),
+  ],
 };
 
 const pugFiles = globule.find('src/html/*.pug');

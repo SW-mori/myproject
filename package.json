@@ -4,8 +4,7 @@
   "main": "index.js",
   "scripts": {
     "build": "es5=true npx webpack-cli build",
-    "watch": "npx webpack-cli watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "npx webpack-cli watch"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +13,7 @@
     "@babel/core": "^7.16.12",
     "@babel/preset-env": "^7.16.11",
     "babel-loader": "^8.2.3",
+    "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.5.1",
     "file-loader": "^6.2.0",
     "html-loader": "^3.1.0",
@@ -23,10 +23,13 @@
     "pug-loader": "^2.4.0",
     "sass-loader": "^12.4.0",
     "url-loader": "^4.1.1",
-    "webpack": "^5.67.0",
-    "webpack-cli": "^4.9.2"
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4",
+    "webpack-watched-glob-entries-plugin": "^2.2.4"
   },
   "dependencies": {
+    "glob": "^7.2.0",
     "jquery": "^3.6.0"
   },
   "description": ""
