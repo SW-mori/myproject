@@ -68,6 +68,13 @@ if (process.env.es5) {
 }
 
 const buildDefault = {
+
+  devServer: {
+    hot: true,
+    open: true,
+    static: './dist',
+  },
+
   //バンドル対象のファイル
   entry: {
     main: './src/js/main.js',
