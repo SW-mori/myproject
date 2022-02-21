@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "es5=true npx webpack-cli build",
-    "watch": "npx webpack-cli watch"
+    "build": "NODE_ENV=production webpack",
+    "watch": "npx webpack-cli watch",
+    "start": "webpack-dev-server"
   },
   "keywords": [],
   "author": "",
@@ -21,7 +22,7 @@
     "mini-css-extract-plugin": "^2.5.3",
     "node-sass": "^7.0.1",
     "pug-loader": "^2.4.0",
-    "sass-loader": "^12.4.0",
+    "sass-loader": "^12.6.0",
     "url-loader": "^4.1.1",
     "webpack": "^5.68.0",
     "webpack-cli": "^4.9.2",
@@ -30,7 +31,8 @@
   },
   "dependencies": {
     "glob": "^7.2.0",
-    "jquery": "^3.6.0"
+    "jquery": "^3.6.0",
+    "pug": "^3.0.2"
   },
   "description": ""
 }
