@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "build": "npx webpack-cli build",
-    "watch": "npx webpack-cli watch",
+    "watch": "npx webpack-cli --watch",
     "start": "webpack serve"
   },
   "keywords": [],
