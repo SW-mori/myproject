@@ -1,15 +1,17 @@
-//CSSを外部ファイルとして出力するために必要なプラグイン
+// CSSを外部ファイルとして出力するために必要なプラグイン
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackWatchedGlobEntries = require('webpack-watched-glob-entries-plugin');
 const path = require('path');
 const globule = require('globule');
+// 出力オプションの指定
+const MODE = "development";
 
 
 let rules = [
 
   {
+    // 対象となるファイルの拡張子
     test: /\.(html)$/,
     use: {
       loader: 'html-loader',
@@ -17,6 +19,7 @@ let rules = [
   },
 
   {
+    // 対象となるファイルの拡張子
     test: /\.pug$/,
     exclude: /node_modules/,
     use: [
@@ -29,13 +32,20 @@ let rules = [
     ]
   },
 
+  // Sassファイルの読み込みとコンパイル
   {
+    // 対象となるファイルの拡張子
     test: /\.(sa|sc|c)ss$/,
     exclude: /node_modules/,
     use: [
-      MiniCssExtractPlugin.loader,
+      // CSSファイルを書き出すオプションを有効にする
+      {
+        loader: MiniCssExtractPlugin.loader,
+      },
+      // CSSをバンドルするための機能
       {
         loader: 'css-loader',
+        // オプションでCSS内のurl()メソッドの取り込みを許可する
         options: { url: true }
       },
       'sass-loader',
@@ -43,6 +53,7 @@ let rules = [
   },
 
   {
+    //対象となるファイルの拡張子
     test: /\.(png|jpg|gif|ico)$/i,
     generator: {
       filename: 'img/[name][ext][query]'
@@ -69,18 +80,17 @@ if (process.env.es5) {
 
 const buildDefault = {
 
-  devServer: {
-    hot: true,
-    open: true,
-    static: './dist',
-  },
+  mode: MODE,
 
   //バンドル対象のファイル
   entry: {
     main: './src/js/main.js',
   },
-  
-  mode:"development",
+
+  devServer: {
+    static: './dist',
+    open: true
+  },
 
   module: {
     rules: rules
@@ -103,13 +113,16 @@ const buildDefault = {
   },
 
   plugins: [
-    new CleanWebpackPlugin(),
 		new WebpackWatchedGlobEntries(),
 
+    // CSSファイルを外だしにするプラグイン
     new MiniCssExtractPlugin({
+      // ファイル名の設定
       filename: 'css/[name].css'
     }),
   ],
+  // ES5(IE11等)向けの指定
+  target: ["web", "es5"],
 };
 
 const pugFiles = globule.find('src/html/*.pug');
