@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackWatchedGlobEntries = require('webpack-watched-glob-entries-plugin');
 const path = require('path');
 const globule = require('globule');
+const glob = require('globule');
 // 出力オプションの指定
 const MODE = "development";
 
@@ -54,7 +55,7 @@ let rules = [
 
   {
     //対象となるファイルの拡張子
-    test: /\.(png|jpg|gif|ico)$/i,
+    test: /\.(png|jpg|gif|ico|svg)$/i,
     generator: {
       filename: 'img/[name][ext][query]'
     },
@@ -88,7 +89,7 @@ const buildDefault = {
   },
 
   devServer: {
-    static: './dist',
+    static: './dist/html',
     open: true
   },
 
