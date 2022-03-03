@@ -1,0 +1,70 @@
+html {
+    font-size: 100%;
+}
+
+.bookStore {
+    font-family: 'Arial', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Meiryo', 'sans-serif';
+
+    #header {
+        height: 100vh; //ビューポートの高さに対する割合
+        background-image: url('../img/mainvisual.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-bottom: 80px;
+        position: relative;
+
+        .main-title {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+        }
+    }
+
+    .MainContainer {
+        max-width: 1200px;
+        padding: 0 5%;
+        margin: 0 auto;
+        text-align: center;
+
+        .section-title {
+            margin-bottom: 20px;
+        }
+
+        .archive {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            .Item {
+                width: 49%;
+                position: relative;
+            }
+
+            .ItemContent {
+                max-width: 300px;
+                color: #ffffff;
+                background-color: gray;
+                padding: 10px 0;
+                margin: 0 auto;
+                top: 50%;
+                left: 0;
+                right: 0;
+                position: absolute;
+            }
+
+            .item-text {
+                color: #ffffff;
+            }
+        }
+    }
+
+    .fashion {
+        height: 500px;
+        background-image: url('../img/fashion.jpg');
+        background-size: cover;
+        background-position: center top;
+        margin-top: 80px;
+        padding-top: 50px;
+        
+    }
+}

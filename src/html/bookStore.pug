@@ -1,0 +1,41 @@
+doctype html 
+html(lang="ja")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="x-ua-compatible" content="ie=edge")
+    title Mag88
+    meta(name="description" content="説明文")
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    link(rel="shortcut icon" href="../img/favicon.ico")
+  
+body.bookStore
+  header#header
+    h1.main-title
+      img(src=require("~/img/logo.svg"), alt="Mag88")
+  main 
+    .MainContainer
+      h2.section-title A special, long article in a newspaper or magazine
+      p.sentence テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+        br
+        | テキストテキストテキストテキストテキストテキストテキストテキスト
+      .archive
+        a.Item(href="#")   
+          img(src=require("~/img/magazine-archive.jpg"), alt="Mag88")
+          .ItemContent
+            h2.item-title Archive 
+            p.item-text テキストテキストテキストテキスト
+               br
+               | テキストテキストテキスト
+        a.Item(href="#") 
+          img(src=require("~/img/magazine-new.jpg"), alt="Mag88")
+          .ItemContent
+            h2.item-title New 
+            p.item-text  テキストテキストテキストテキスト
+              br
+              | テキストテキストテキスト
+    .fashion 
+      .MainContainer
+        h2.section-title Fashion & Style
+        p.sentence テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          br
+          | テキストテキストテキストテキストテキストテキストテキストテキスト
