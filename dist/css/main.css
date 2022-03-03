@@ -1,9 +1,64 @@
 /*!******************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/sass/style.scss ***!
   \******************************************************************************************************************************************/
-#heading {
-  font-size: 30px; }
+* {
+  margin: 0;
+  padding: 0; }
 
-.paragraph {
-  color: red; }
+*, :after, :before {
+  box-sizing: inherit; }
+
+img {
+  max-width: 100%; }
+
+html {
+  font-size: 100%; }
+
+.bookStore {
+  font-family: 'Arial', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Meiryo', 'sans-serif'; }
+  .bookStore #header {
+    height: 100vh;
+    background-image: url(../img/mainvisual.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 80px;
+    position: relative; }
+    .bookStore #header .main-title {
+      position: absolute;
+      top: 30px;
+      right: 30px; }
+  .bookStore .MainContainer {
+    max-width: 1200px;
+    padding: 0 5%;
+    margin: 0 auto;
+    text-align: center; }
+    .bookStore .MainContainer .section-title {
+      margin-bottom: 20px; }
+    .bookStore .MainContainer .archive {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px; }
+      .bookStore .MainContainer .archive .Item {
+        width: 49%;
+        position: relative; }
+      .bookStore .MainContainer .archive .ItemContent {
+        max-width: 300px;
+        color: #ffffff;
+        background-color: gray;
+        padding: 10px 0;
+        margin: 0 auto;
+        top: 50%;
+        left: 0;
+        right: 0;
+        position: absolute; }
+      .bookStore .MainContainer .archive .item-text {
+        color: #ffffff; }
+  .bookStore .fashion {
+    height: 500px;
+    background-image: url(../img/fashion.jpg);
+    background-size: cover;
+    background-position: center top;
+    margin-top: 80px;
+    padding-top: 50px; }
 
