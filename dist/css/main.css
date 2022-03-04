@@ -14,8 +14,12 @@ img {
 html {
   font-size: 100%; }
 
+li {
+  list-style: none; }
+
 .bookStore {
-  font-family: 'Arial', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Meiryo', 'sans-serif'; }
+  font-family: 'Arial', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Meiryo', 'sans-serif';
+  color: #2a2a2a; }
   .bookStore #header {
     height: 100vh;
     background-image: url(../img/mainvisual.jpg);
@@ -35,30 +39,119 @@ html {
     text-align: center; }
     .bookStore .MainContainer .section-title {
       margin-bottom: 20px; }
-    .bookStore .MainContainer .archive {
+    .bookStore .MainContainer .flex-item {
       display: flex;
       justify-content: space-between;
       margin-top: 30px; }
-      .bookStore .MainContainer .archive .Item {
+      .bookStore .MainContainer .flex-item .Item {
         width: 49%;
         position: relative; }
-      .bookStore .MainContainer .archive .ItemContent {
-        max-width: 300px;
+        .bookStore .MainContainer .flex-item .Item:hover {
+          opacity: 0.7; }
+      .bookStore .MainContainer .flex-item .ItemContent {
+        width: 300px;
         color: #ffffff;
         background-color: gray;
         padding: 10px 0;
         margin: 0 auto;
         top: 50%;
-        left: 0;
-        right: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
         position: absolute; }
-      .bookStore .MainContainer .archive .item-text {
+      .bookStore .MainContainer .flex-item .item-text {
         color: #ffffff; }
-  .bookStore .fashion {
+  .bookStore .sentenceDetail {
+    display: inline-block;
+    border: solid 1px #2a2a2a;
+    text-decoration: none;
+    color: #2a2a2a;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 40px;
+    padding: 20px 50px; }
+    .bookStore .sentenceDetail:hover {
+      opacity: 0.7; }
+  .bookStore .fashion-style {
     height: 500px;
     background-image: url(../img/fashion.jpg);
     background-size: cover;
     background-position: center top;
-    margin-top: 80px;
+    margin: 80px 0;
     padding-top: 50px; }
+  .bookStore .catalog-antique {
+    background-color: #f5f5f5;
+    padding: 80px 0; }
+    .bookStore .catalog-antique .flex-item {
+      margin-top: 0;
+      align-items: center; }
+      .bookStore .catalog-antique .flex-item .item {
+        width: 48%; }
+        .bookStore .catalog-antique .flex-item .item .item-title {
+          margin-bottom: 50px; }
+        .bookStore .catalog-antique .flex-item .item .item-text {
+          color: #2a2a2a;
+          margin-bottom: 30px;
+          text-align: left; }
+  .bookStore #footer {
+    background-color: #2a2a2a;
+    color: #ffffff; }
+    .bookStore #footer .MainContainer {
+      text-align: start;
+      padding-top: 100px;
+      padding-bottom: 100px; }
+      .bookStore #footer .MainContainer .flex-item {
+        margin-top: 0px; }
+        .bookStore #footer .MainContainer .flex-item .item {
+          width: 33%; }
+          .bookStore #footer .MainContainer .flex-item .item:first-child {
+            padding: 60px 0; }
+          .bookStore #footer .MainContainer .flex-item .item .footer-title {
+            font-size: 16px;
+            margin-bottom: 20px; }
+          .bookStore #footer .MainContainer .flex-item .item ul {
+            font-size: 12px; }
+            .bookStore #footer .MainContainer .flex-item .item ul li::before {
+              content: '-';
+              margin-right: 5px; }
+          .bookStore #footer .MainContainer .flex-item .item .footer-text {
+            font-size: 12px; }
+    .bookStore #footer .copyright {
+      color: #2a2a2a;
+      text-align: center;
+      padding: 30px 0;
+      background-color: #ffffff; }
+  @media screen and (max-width: 896px) {
+    .bookStore .MainContainer .flex-item {
+      flex-direction: column; }
+      .bookStore .MainContainer .flex-item .Item {
+        width: 100%; }
+        .bookStore .MainContainer .flex-item .Item:first-child {
+          margin-bottom: 30px; }
+    .bookStore .catalog-antique {
+      padding: 30px 0; }
+      .bookStore .catalog-antique .flex-item .item {
+        width: 100%; }
+        .bookStore .catalog-antique .flex-item .item:first-child {
+          margin-bottom: 60px; }
+    .bookStore #footer .MainContainer {
+      padding-top: 30px;
+      padding-bottom: 30px; }
+      .bookStore #footer .MainContainer .flex-item {
+        margin-top: 0px; }
+        .bookStore #footer .MainContainer .flex-item .item {
+          width: 100%; }
+          .bookStore #footer .MainContainer .flex-item .item:first-child {
+            padding: 0;
+            text-align: center; }
+          .bookStore #footer .MainContainer .flex-item .item .footer-title {
+            font-size: 16px;
+            margin-bottom: 20px; }
+          .bookStore #footer .MainContainer .flex-item .item ul {
+            font-size: 12px;
+            margin: 30px 0; }
+            .bookStore #footer .MainContainer .flex-item .item ul li::before {
+              content: '-';
+              margin-right: 5px; }
+          .bookStore #footer .MainContainer .flex-item .item .footer-text {
+            font-size: 12px; } }
 
