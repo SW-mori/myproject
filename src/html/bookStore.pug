@@ -18,7 +18,7 @@ body.bookStore
       p.sentence テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
         br
         | テキストテキストテキストテキストテキストテキストテキストテキスト
-      .archive
+      .flex-item
         a.Item(href="#")   
           img(src=require("~/img/magazine-archive.jpg"), alt="Mag88")
           .ItemContent
@@ -33,9 +33,50 @@ body.bookStore
             p.item-text  テキストテキストテキストテキスト
               br
               | テキストテキストテキスト
-    .fashion 
+    .fashion-style 
       .MainContainer
         h2.section-title Fashion & Style
         p.sentence テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
           br
           | テキストテキストテキストテキストテキストテキストテキストテキスト
+        a.sentenceDetail(href="#") Read More
+    
+    .catalog-antique 
+      .MainContainer 
+        .flex-item 
+         .item 
+            img(src=require("~/img/catalog.jpg"), alt="Mag88")
+         .item 
+            h2.item-title Catalog
+            p.item-text テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            p.item-text テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            p.item-text テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+
+    .catalog-antique 
+      .MainContainer 
+        .flex-item 
+          .item 
+            h2.item-title Antique
+            p.item-text テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            p.item-text テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            a.sentenceDetail(href="#") Read More
+          .item 
+            img(src=require("~/img/antique.jpg"), alt="Mag88")
+  
+  footer#footer 
+    .MainContainer
+      .flex-item 
+        .item 
+          img(src=require("~/img/logo.svg"), alt="Mag88")
+        .item 
+          h2.footer-title タイトル
+          ul 
+            li テキストテキストテキスト
+            li テキストテキストテキスト
+            li テキストテキストテキスト
+            li テキストテキストテキスト
+            li テキストテキストテキスト
+        .item 
+          h2.footer-title タイトル
+          p.footer-text テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+    .copyright © Mag88
