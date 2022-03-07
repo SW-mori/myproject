@@ -1,6 +1,7 @@
 /*!******************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/sass/style.scss ***!
   \******************************************************************************************************************************************/
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0; }
@@ -22,7 +23,7 @@ li {
   color: #2a2a2a; }
   .bookStore #header {
     height: 100vh;
-    background-image: url(../img/mainvisual.jpg);
+    background-image: url(../img/img_bookstore_mainvisual.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -73,7 +74,7 @@ li {
       opacity: 0.7; }
   .bookStore .fashion-style {
     height: 500px;
-    background-image: url(../img/fashion.jpg);
+    background-image: url(../img/img_bookstore_fashion.jpg);
     background-size: cover;
     background-position: center top;
     margin: 80px 0;
@@ -154,4 +155,80 @@ li {
               margin-right: 5px; }
           .bookStore #footer .MainContainer .flex-item .item .footer-text {
             font-size: 12px; } }
+
+html {
+  font-size: 100%; }
+
+li {
+  list-style: none; }
+
+.cafe {
+  font-family: Helvetica Neue、Arial、Hiragino Sans、Hiragino Kaku Gothic ProN、Meiryo、sans-serif;
+  color: #ffffff; }
+  .cafe #header {
+    height: 100vh;
+    background-image: url(../img/img_cafe_mainvisual.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px 60px;
+    margin-bottom: 20px;
+    position: relative; }
+    .cafe #header ul {
+      display: flex;
+      float: right; }
+      .cafe #header ul li {
+        margin-left: 60px; }
+        .cafe #header ul li a {
+          font-size: 20px;
+          font-weight: bold;
+          color: #ffffff;
+          text-decoration: none;
+          text-shadow: 0 1px #bbb, 0 2px #aaa, 0 3px #999; }
+    .cafe #header .main-title {
+      font-size: 100px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  .cafe .menu .menu-image {
+    height: 300px;
+    background-image: url(../img/img_cafe_menu.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; }
+    .cafe .menu .menu-image .section-title {
+      font-size: 50px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  .cafe .menu .mainContainer {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 100px 0; }
+    .cafe .menu .mainContainer .menu-item {
+      color: #000000;
+      width: 50%;
+      padding: 0 50px;
+      text-align: center; }
+      .cafe .menu .mainContainer .menu-item:first-child {
+        border-right: solid 1px #000000; }
+      .cafe .menu .mainContainer .menu-item .menu-title {
+        display: inline-block;
+        font-size: 30px;
+        color: #000000;
+        border-bottom: solid 3px #e03131;
+        margin-bottom: 50px; }
+      .cafe .menu .mainContainer .menu-item dl {
+        display: flex;
+        flex-wrap: wrap; }
+        .cafe .menu .mainContainer .menu-item dl dt {
+          width: 80%;
+          border-bottom: 1px dotted #000000;
+          text-align: left; }
+        .cafe .menu .mainContainer .menu-item dl dd {
+          width: 20%;
+          text-align: right; }
 
