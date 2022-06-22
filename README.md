@@ -1,9 +1,7 @@
 # myproject
 マークアップ練習用リポジトリ
 
-サイトURL：https://code-step.com/demo/html/store/
+サイトURL：https://code-step.com/demo/html/extra2/
 
-期限設定：2d(16h)
-残り時間：12h
-
-2022/03/07：4h
+期限設定：1d(8h)
+残り時間：8h
