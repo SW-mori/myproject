@@ -1,7 +1,7 @@
 # myproject
 マークアップ練習用リポジトリ
 
-・作業予定
+・作業予定（6/22(水)）
 
 対象ページ：https://code-step.com/demo/html/extra2/
 
