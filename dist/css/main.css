@@ -232,3 +232,84 @@ li {
           width: 20%;
           text-align: right; }
 
+html {
+  font-size: 100%; }
+
+li {
+  list-style: none; }
+
+.accordion .base {
+  max-width: 960px;
+  padding: 0 20px;
+  margin: 100px auto; }
+
+.accordion .main-title {
+  font-size: 30px;
+  margin-bottom: 50px; }
+
+.accordion .menu li {
+  border-top: solid 1px #000; }
+  .accordion .menu li .content {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 40px 30px;
+    position: relative;
+    transition: .5s; }
+    .accordion .menu li .content .contentTxt {
+      font-size: 20px; }
+    .accordion .menu li .content::before {
+      content: '';
+      width: 20px;
+      height: 1px;
+      background: #000;
+      position: absolute;
+      top: 50%;
+      right: 5%;
+      transform: translateY(-50%); }
+    .accordion .menu li .content::after {
+      content: '';
+      width: 20px;
+      height: 1px;
+      background: #000;
+      position: absolute;
+      top: 50%;
+      right: 5%;
+      transform: translateY(-50%) rotate(90deg);
+      transition: .5s; }
+    .accordion .menu li .content:hover {
+      background-color: #ffda5f; }
+  .accordion .menu li .content.open {
+    background-color: #ffda5f; }
+    .accordion .menu li .content.open::after {
+      transform: translateY(-50%) rotate(180deg); }
+  .accordion .menu li .contentDetail {
+    padding: 30px;
+    display: none; }
+    .accordion .menu li .contentDetail dl {
+      display: flex;
+      flex-wrap: wrap; }
+      .accordion .menu li .contentDetail dl dt {
+        font-weight: bold;
+        width: 20%;
+        margin-bottom: 40px; }
+      .accordion .menu li .contentDetail dl dd {
+        width: 80%;
+        margin-bottom: 40px; }
+
+.accordion .menu li:last-child {
+  border-bottom: solid 1px #000; }
+
+@media screen and (max-width: 600px) {
+  .accordion .menu li .content {
+    padding: 40px 0; }
+    .accordion .menu li .content .contentTxt {
+      font-size: 16px; }
+  .accordion .menu li .contentDetail {
+    padding: 30px 0; }
+    .accordion .menu li .contentDetail dl dt {
+      width: 100%;
+      margin-bottom: 10px; }
+    .accordion .menu li .contentDetail dl dd {
+      width: 100%;
+      padding-left: 10px; } }
+

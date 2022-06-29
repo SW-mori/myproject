@@ -89,7 +89,7 @@ const buildDefault = {
   },
 
   devServer: {
-    static: './dist/html',
+    static: 'dist',
     open: true
   },
 
