@@ -30,6 +30,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
+/***/ "./src/js/common/media.js":
+/*!********************************!*\
+  !*** ./src/js/common/media.js ***!
+  \********************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n\r\nconst $ = (jquery__WEBPACK_IMPORTED_MODULE_0___default());\r\n\r\n$('.navi_toggle').on('click', function () {\r\n    $('#header').toggleClass('show');\r\n  });\r\n  \n\n//# sourceURL=webpack://myproject/./src/js/common/media.js?");
+
+/***/ }),
+
 /***/ "./src/js/common/menu.js":
 /*!*******************************!*\
   !*** ./src/js/common/menu.js ***!
@@ -48,7 +59,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jque
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sass_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../sass/style.scss */ \"./src/sass/style.scss\");\n/* harmony import */ var _common_menu_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./common/menu.js */ \"./src/js/common/menu.js\");\n\r\n\n\n//# sourceURL=webpack://myproject/./src/js/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sass_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../sass/style.scss */ \"./src/sass/style.scss\");\n/* harmony import */ var _common_menu_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./common/menu.js */ \"./src/js/common/menu.js\");\n/* harmony import */ var _common_media_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./common/media.js */ \"./src/js/common/media.js\");\n\r\n\r\n\n\n//# sourceURL=webpack://myproject/./src/js/main.js?");
 
 /***/ })
 
