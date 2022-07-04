@@ -1,6 +1,18 @@
 # myproject
 マークアップ練習用リポジトリ
 
+・作業予定（7/4(月)）
+
+対象ページ：https://code-step.com/media-menu/
+
+・作業実績
+
+進捗率：50%
+
+実作業時間：6h
+
+残り時間：8h
+
 ・作業予定（7/1(金)）
 
 対象ページ：https://code-step.com/media-menu/
