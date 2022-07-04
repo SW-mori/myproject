@@ -55,7 +55,7 @@ let rules = [
 
   {
     //対象となるファイルの拡張子
-    test: /\.(png|jpg|gif|ico|svg)$/i,
+    test: /\.(png|jpg|gif|ico|svg|mp4)$/i,
     generator: {
       filename: 'img/[name][ext][query]'
     },

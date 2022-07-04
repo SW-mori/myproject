@@ -9,18 +9,31 @@ html(lang="ja")
 
 body.media 
   header#header 
-    h1.site-title 
+    h1.site_title 
       a(href="#") 
-        img(src=require("~/img/img_media_logo.svg"), alt="Sneakers")
+        img(src=("../img/img_media_logo.svg"), alt="Sneakers")
     nav#navi
-      ul.nav-menu 
+      ul.nav_menu 
         li 
           a(href="#pickup") PICK UP
+        li
           a(href="#feature") FEATURE
+        li
           a(href="#contact") CONTACT
-      ul.nav-snsMenu
+      ul.navi_snsMenu
         li
           a(href="https://twitter.com/" target="_blank") Twitter
+        li
           a(href="https://www.facebook.com/" target="_blank") facebook
-          a(href="https://www.instagram.com/" target="_blank") instagram 
-
+        li
+          a(href="https://www.instagram.com/" target="_blank") instagram
+    
+    .navi_toggle
+      div 
+      div 
+      div
+    .shadow 
+  
+  main#main 
+    .main_video
+      video(src=("../video/video.mp4") loop autoplay muted playsinline) 

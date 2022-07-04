@@ -7,16 +7,22 @@
   padding: 0; }
 
 *, :after, :before {
+  background-repeat: no-repeat;
   box-sizing: inherit; }
+
+html {
+  font-size: 100%;
+  box-sizing: border-box; }
+
+li {
+  list-style: none; }
 
 img {
   max-width: 100%; }
 
-html {
-  font-size: 100%; }
-
-li {
-  list-style: none; }
+a {
+  text-decoration: none;
+  color: #fff; }
 
 .bookStore {
   font-family: 'Arial', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Meiryo', 'sans-serif';
@@ -156,12 +162,6 @@ li {
           .bookStore #footer .MainContainer .flex-item .item .footer-text {
             font-size: 12px; } }
 
-html {
-  font-size: 100%; }
-
-li {
-  list-style: none; }
-
 .cafe {
   font-family: Helvetica Neue、Arial、Hiragino Sans、Hiragino Kaku Gothic ProN、Meiryo、sans-serif;
   color: #ffffff; }
@@ -231,12 +231,6 @@ li {
         .cafe .menu .mainContainer .menu-item dl dd {
           width: 20%;
           text-align: right; }
-
-html {
-  font-size: 100%; }
-
-li {
-  list-style: none; }
 
 .accordion .base {
   max-width: 960px;
@@ -313,18 +307,92 @@ li {
       width: 100%;
       padding-left: 10px; } }
 
-html {
-  font-size: 100%; }
-
-li {
-  list-style: none; }
-
 .media #header {
   width: 100%;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   padding: 20px 40px;
   position: fixed;
   z-index: 10;
   background-color: #fff; }
+  .media #header #navi {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    bottom: 0;
+    width: 250px;
+    color: #fff;
+    padding: 60px 25px;
+    background-color: #121212;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: all .5s;
+    z-index: 20;
+    opacity: 0; }
+    .media #header #navi .nav_menu {
+      margin-bottom: 60px; }
+      .media #header #navi .nav_menu li {
+        padding: 20px 0;
+        border-top: 1px solid #fff; }
+        .media #header #navi .nav_menu li:last-child {
+          border-bottom: 1px solid #fff; }
+        .media #header #navi .nav_menu li a {
+          font-size: 14.4px; }
+    .media #header #navi .navi_snsMenu li {
+      padding: 5px 0; }
+  .media #header .navi_toggle {
+    display: block;
+    position: fixed;
+    top: 30px;
+    right: 60px;
+    width: 30px;
+    height: 30px;
+    transition: all .5s;
+    cursor: pointer;
+    z-index: 20; }
+    .media #header .navi_toggle div {
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: #333;
+      position: absolute;
+      transition: transform .5s, opacity .5s; }
+      .media #header .navi_toggle div:nth-child(1) {
+        top: 0; }
+      .media #header .navi_toggle div:nth-child(2) {
+        top: 10px; }
+      .media #header .navi_toggle div:nth-child(3) {
+        top: 20px; }
+
+.media #header.show #navi {
+  opacity: 1;
+  left: 0; }
+
+.media #header.show .navi_toggle div {
+  background-color: #fff; }
+  .media #header.show .navi_toggle div:nth-child(1) {
+    transform: translateY(10px) rotate(-315deg); }
+  .media #header.show .navi_toggle div:nth-child(2) {
+    opacity: 0; }
+  .media #header.show .navi_toggle div:nth-child(3) {
+    transform: translateY(-10px) rotate(315deg); }
+
+.media #header.show .shadow {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .8;
+  z-index: 10;
+  cursor: pointer; }
+
+.media #main {
+  padding-top: 80px; }
+  .media #main .main_video video {
+    width: 100%; }
 
