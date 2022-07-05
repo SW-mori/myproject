@@ -23,7 +23,7 @@ $(function() {
     return false;
   });
 
-  $('.slick-area').slick({
+  $('.slick_area').slick({
     arrows: false,
     centerMode: true,
     centerPadding: '100px',
