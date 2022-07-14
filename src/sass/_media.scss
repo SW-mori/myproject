@@ -1,6 +1,6 @@
-.media {
+#media {
   line-height: 1.7;
-  font-size: 14.4px;
+  font-size: 14px;
   #header {
     width: 100%;
     height: 80px;
@@ -35,10 +35,6 @@
 
           &:last-child {
             border-bottom: 1px solid #fff;
-          }
-
-          a {
-            font-size: 14.4px;
           }
         }
       }
@@ -132,7 +128,7 @@
       width: 100%;
       padding: 100px 0 50px 0;
 
-      .slick-area {
+      .slick_area {
         font-size: 0;
 
         li {
@@ -208,28 +204,34 @@
 
           input {
             width: 100%;
+            height: 44px;
             background-color: #fff;
             padding: 10px;
             margin-bottom: 20px;
             border-style: none;
+            border-radius: 0;
+            outline: none;
           }
 
           textarea {
             width: 100%;
+            height: 69px;
             background-color: #fff;
             padding: 10px;
             margin-bottom: 20px;
+            border-radius: 0;
+            outline: none;
           }
 
           .button {
             input {
               width: 200px;
+              height: 50px;
               color: #fff;
               background-color: #121212;
               border: solid 1px #fff;
               padding: 12px 0;
               margin-bottom: 0;
-              -webkit-appearance: button;
               cursor: pointer;
 
               &:hover {
@@ -249,5 +251,79 @@
     text-align: center;
     padding: 10px;
     font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #media {
+    #header {
+      padding: 20px 16px;
+
+      #navi {
+        width: 300px;
+      }
+
+      .navi_toggle {
+        right: 20px;
+      }
+    }
+
+    #main {
+      .main_video {
+        video {
+          width: 100%;
+          height: 100vh;
+          object-fit: cover;
+        }
+      }
+      .section_title {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      #pickup {
+        padding: 80px 0;
+
+        .slick_area {
+          li {
+            padding: 0 20px;
+          }
+        } 
+      }
+
+      #feature {
+        padding: 80px 16px;
+
+        .grid {
+          .grid_item {
+            .grid_item_content {
+              padding: 16px;
+            }
+          }
+        }
+      }
+
+      #contact {
+        padding: 80px 0;
+
+        .contact_content {
+          flex-direction: column;
+
+          .content_info {
+            width: 100%;
+          }
+
+          .content_form {
+            width: 100%;
+
+            .button {
+              input {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
